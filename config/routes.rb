@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  devise_for :users
+
   resources :tasks
 
   resources :work_logs
@@ -7,7 +10,12 @@ Rails.application.routes.draw do
 
   resources :students
 
-  get 'home/index'
+  devise_scope :user do
+    get "sign_in", :to => "devise/session#new"
+  end
+
+
+  #get 'home/index'
 
   
   root to: "home#index"
