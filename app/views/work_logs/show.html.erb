@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @work_log.type %>
+</p>
+
+<p>
+  <strong>Start time:</strong>
+  <%= @work_log.start_time %>
+</p>
+
+<p>
+  <strong>End time:</strong>
+  <%= @work_log.end_time %>
+</p>
+
+<%= link_to 'Edit', edit_work_log_path(@work_log) %> |
+<%= link_to 'Back', work_logs_path %>
