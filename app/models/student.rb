@@ -9,9 +9,9 @@
 #  updated_at :datetime
 #
 
-class Student < ActiveRecord::Base
+class Student < User
 
-  has_many :courses
-  has_many :tasks
+  #has_many :courses
+  #has_many :tasks
 
 end
