@@ -25,5 +25,14 @@
   <%= @task.actual_grade %>
 </p>
 
+<p>
+  <strong><%= link_to 'View Work Logs', work_logs_path(:task_id => @task.id) %></strong>
+</p>
+
+<p>
+  <strong><%= link_to 'Add a work log', new_work_log_path(:task_id => @task.id)%></strong>
+</p>
+
+
 <%= link_to 'Edit', edit_task_path(@task) %> |
 <%= link_to 'Back', tasks_path %>

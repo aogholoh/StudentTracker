@@ -5,7 +5,7 @@
         <% if !user_signed_in? %>
             <%= link_to 'Sign In', new_user_session_path %>
         <% else %>
-            <%= link_to 'Courses', courses_path(:student_id => @student.id) %>
+            <%= link_to 'Courses', courses_path %>
         <% end %>
 
         

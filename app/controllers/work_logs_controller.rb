@@ -25,6 +25,7 @@ class WorkLogsController < ApplicationController
   # POST /work_logs.json
   def create
     @work_log = WorkLog.new(work_log_params)
+    @work_log.task_id = params[:task_id]
 
     respond_to do |format|
       if @work_log.save

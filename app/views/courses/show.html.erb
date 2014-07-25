@@ -9,16 +9,9 @@
   <strong>Course number:</strong>
   <%= @course.course_number %>
 </p>
-<strong>Tasks:</strong></br>
-<% if @course.tasks %>
-    <% @course.tasks.each do |task| %>
-         <li><%= task.name %>
-	   </li>
-	 <% end %>
-<% end %></br>
     
 <p>
-  <strong><%= link_to 'View tasks', new_task_path(:course_id => @course.id)%></strong>
+  <strong><%= link_to 'View tasks', tasks_path(:course_id => @course.id) %></strong>
 </p>
 
 
