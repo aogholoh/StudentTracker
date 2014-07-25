@@ -13,5 +13,5 @@
 class WorkLog < ActiveRecord::Base
 
   belongs_to :tasks
-
+  self.inheritance_column = nil
 end

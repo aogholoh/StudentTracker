@@ -1,0 +1,4 @@
+class AddStudentIdToTask < ActiveRecord::Migration
+  def change
+  end
+end

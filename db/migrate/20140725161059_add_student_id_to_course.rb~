@@ -1,0 +1,4 @@
+class AddStudentIdToCourse < ActiveRecord::Migration
+  def change
+  end
+end

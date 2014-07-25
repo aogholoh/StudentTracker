@@ -17,5 +17,5 @@ class Task < ActiveRecord::Base
   belongs_to :students
   belongs_to :courses
   has_many :work_logs
-
+  self.inheritance_column = nil
 end
